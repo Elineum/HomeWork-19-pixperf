@@ -1,0 +1,31 @@
+.about-me {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &__title-holder {
+    font-size: 33px;
+    color: $blue;
+    padding-top: 92px;
+    margin-bottom: 47px;
+    text-align: center;
+    word-spacing: -4px;
+
+    h2 {
+      font-weight: 300;
+    }
+  }
+
+  &__text-holder {
+    color: black;
+    line-height: 35px;
+    max-width: 1100px;
+    text-align: center;
+    margin-bottom: 115px;
+
+    p {
+      padding-left: 13px;
+    }
+  }
+}

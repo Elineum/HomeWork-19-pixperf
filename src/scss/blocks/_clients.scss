@@ -1,0 +1,50 @@
+.maksym {
+  background-color: $lightBlue;
+}
+
+.clients__holder {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.list {
+  width: 100%;
+  padding-bottom: 80px;
+
+  &__image-th {
+    padding: 20px;
+  }
+
+  &__item {
+    margin-bottom: 61px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+}
+
+.clients {
+  padding-top: 88px;
+  font-size: 33px;
+  color: $blue;
+  h2 {
+    font-weight: 300;
+  }
+}
+
+// @media screen and (max-width: 768px ) {
+//     .list__item{
+//        width: 50%;
+//     }
+// }
+
+// @media screen and (max-width: 768px ) {
+//     .list__item{
+//        width: 100%;
+//     }
+// }

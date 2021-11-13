@@ -1,0 +1,91 @@
+.vasylkov-expert {
+  background-color: #fff;
+  text-align: center;
+}
+
+.expert-in {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__title-holder {
+    font-size: 33px;
+    color: $blue;
+    padding-top: 82px;
+    margin-bottom: 110px;
+
+    h2 {
+      font-weight: 300;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    max-width: 1170px;
+  }
+
+  &__item {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 92px;
+    min-width: calc(100% / 3);
+  }
+
+  &__link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: max-content;
+    max-height: max-content;
+
+    &:hover .expert-in__block-title,
+    &:hover .expert-in__icon-holder {
+      color: #c97000;
+    }
+
+    &:hover .expert-in__text-holder {
+      color: black;
+    }
+  }
+
+  &__icon-holder {
+    color: $blue;
+    font-size: 66px;
+    height: 139px;
+    width: 139px;
+    border: 1px solid $lightgrey;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all ease-in-out 0.3s;
+  }
+
+  &__block-title {
+    font-size: 21px;
+    color: $blue;
+    padding-top: 60px;
+    transition: all ease-in-out 0.3s;
+    letter-spacing: -0.3px;
+  }
+
+  &__text-holder {
+    color: $lightgrey;
+    max-width: 378px;
+    text-align: center;
+    padding: 15px 5px 0;
+    transition: all ease-in-out 0.3s;
+    word-spacing: -0.1px;
+    line-height: 35px;
+  }
+
+  .icon-animation {
+    position: relative;
+    left: 5px;
+    bottom: 2px;
+  }
+}

@@ -1,0 +1,91 @@
+.vasylkov-welcome {
+  background: linear-gradient(
+    45deg,
+    rgba(54, 149, 255, 1) 20%,
+    rgba(70, 157, 255, 1) 20%,
+    rgba(70, 157, 255, 1) 40%,
+    rgba(64, 153, 255, 1) 40%,
+    rgba(64, 153, 255, 1) 60%,
+    rgba(60, 143, 254, 1) 60%,
+    rgba(60, 143, 254, 1) 80%,
+    rgba(54, 124, 253, 1) 80%
+  );
+}
+
+.welcome {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 176px;
+
+  &__ball {
+    background-color: white;
+    height: 163px;
+    width: 163px;
+    border-radius: 50%;
+    border: 8px solid $blue;
+    outline: 10px solid $blue;
+  }
+
+  &__title-holder {
+    text-transform: uppercase;
+    font-size: 24px;
+    padding-top: 24px;
+    line-height: 60px;
+    color: white;
+    text-align: center;
+    max-width: 900px;
+    letter-spacing: 2px;
+    margin-bottom: 0;
+
+    h1 {
+      font-weight: 900;
+      margin-bottom: 0;
+    }
+
+    @include media("<=520px") {
+      font-size: 20px;
+    }
+  }
+
+  &__text-holder {
+    color: white;
+    font-weight: 300;
+    text-transform: uppercase;
+    max-width: 770px;
+    text-align: center;
+    line-height: 35px;
+    word-spacing: 3px;
+    padding-top: 19px;
+  }
+
+  &__btn-holder {
+    padding-top: 30px;
+    margin-bottom: 76px;
+
+    &_btn {
+      color: $blue;
+      background-color: #fff;
+      font-size: 20px;
+      font-weight: 700;
+      height: 55px;
+      width: 204px;
+      border-radius: 25px;
+      border: none;
+      cursor: pointer;
+      transition: all ease-in-out 0.4s;
+    }
+
+    &_btn:hover {
+      background-color: $lightgrey;
+    }
+  }
+
+  &__scroll-holder {
+    margin-bottom: 24px;
+    color: white;
+    font-size: 40px;
+    opacity: 60%;
+  }
+}
